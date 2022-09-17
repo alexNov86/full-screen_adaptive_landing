@@ -10,22 +10,32 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
+        <nav class="header__menu menu">
+          <a href="#" class="menu__link">Link №1</a>
+          <a href="#" class="menu__link">Link №2</a>
+          <a href="#" class="menu__link">Link №3</a>
+          <a href="#" class="menu__link">Link №4</a>
+        </nav>
+      </header>
       <main class="page">
         <div class="page__wrapper">
-          <div class="page__screen">
+          <div class="page__screen screen">
             <div class="screen__content">
-              <h1 class="screen__title screen__title_bg">Hello!</h1>
+              <h1 class="screen__title screen__title_bg" data-swiper-parallax="50%" data-swiper-parallax-opacity="0">
+                Полноэкранный адаптивный лендинг с навигацией и параллакс эффектом на базе Swiper слайдер
+              </h1>
             </div>
             <div class="screen__body">
-              <div class="screen__image">
+              <div class="screen__image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
                 <img src="img/01_1920_1280.jpg" alt="" />
               </div>
             </div>
           </div>
           <div class="page__screen screen">
             <div class="screen__content">
-              <h2 class="screen__title">Beautiful forest</h2>
-              <div class="screen__text">
+              <h2 class="screen__title" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">Beautiful forest</h2>
+              <div class="screen__text" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="900">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, assumenda numquam? Nobis neque eligendi voluptatem, enim vel ab eum
                   reiciendis necessitatibus consequuntur, laudantium voluptas nam similique. Necessitatibus recusandae obcaecati facilis!
@@ -43,15 +53,15 @@
           </div>
           <div class="page__screen screen">
             <div class="screen__body">
-              <div class="screen__image">
+              <div class="screen__image" data-swiper-parallax="50%">
                 <img src="img/02_1920_1280.jpg" alt="" />
               </div>
             </div>
           </div>
           <div class="page__screen screen">
             <div class="screen__content">
-              <h2 class="screen__title">Beautiful lake</h2>
-              <div class="screen__text">
+              <h2 class="screen__title" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">Beautiful lake</h2>
+              <div class="screen__text" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="900">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis? Esse eum laboriosam, officiis eligendi earum iusto aliquid
                   deleniti dicta odio ipsam placeat nemo suscipit cumque qui possimus excepturi vitae.
@@ -64,6 +74,8 @@
             </div>
           </div>
         </div>
+        <div class="page__pagination"></div>
+        <div class="page__scroll"></div>
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
